@@ -1,4 +1,5 @@
-import 'package:heap_sort/heab_sort.dart';
+import 'package:heap_sort/heab.dart';
+import 'package:heap_sort/heap_sort.dart';
 
 void main(List<String> arguments) {
   Heap heap = Heap<int>(elements: [10, 15, 5, 100, 7, 1000, 1]);
@@ -13,5 +14,9 @@ void main(List<String> arguments) {
   print(heap);
   print(heap);
   print(heap.search(10));
+  print([10, 15, 5, 100, 7, 1000, 1]);
+
+  List<int> list = [10, 15, 5, 100, 7, 1000, 1];
+  print(heapSort(list));
   print(heap);
 }

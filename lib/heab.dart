@@ -87,6 +87,7 @@ class Heap<E extends Comparable<dynamic>> {
     _swap(root, elements.length - 1);
     final value = elements.removeLast();
     _siftDown(root);
+    return value;
   }
 
   E? removeAt(int index) {
